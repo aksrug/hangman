@@ -1,6 +1,6 @@
 import React from 'react';
 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('');
+const letters = "AĄBCČDEĘĖFGHIĮJKLMNOPQRSŠTUŲŪVWXYZŽ".split('');
 
 export default function Keyboard({ onLetterClick, guessedLetters }) {
   return (

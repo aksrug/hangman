@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Game } from './components/game/Game';
+/*import { useState } from 'react'
+
 import './App.css';
 
 function App() {
@@ -27,3 +27,4 @@ function App() {
 }
 
 export default App;
+*/

@@ -1,42 +1,72 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.hangman-figure {
+  height: 200px;
+  width: 100px;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.word-display {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.key {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.key.guessed {
+  background-color: gray;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .hangman-figure {
+    height: 150px;
+    width: 75px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+  .word-display {
+    font
+-size: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.keyboard {
+max-width: 300px;
 }
 
-.card {
-  padding: 2em;
+.key {
+padding: 8px 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.scoreboard {
+font-size: 14px;
+}
 }

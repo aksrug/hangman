@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import Keyboard from './components/Keyboard';
-import HangmanFigure from './components/HangmanFigure';
-import WordDisplay from './components/WordDisplay';
-import GameOverMessage from './components/GameOverMessage';
-import Scoreboard from './components/Scoreboard';
+import Keyboard from './components/hangman/Keyboard';
+import HangmanFigure from './components/hangman/HangmanFigure';
+import WordDisplay from './components/hangman/WordDisplay';
+import GameOverMessage from './components/hangman/GameOverMessage';
+import Scoreboard from './components/hangman/Scoreboard';
 
 const words = ['REACT', 'JAVASCRIPT', 'HANGMAN', 'CODING'];
 

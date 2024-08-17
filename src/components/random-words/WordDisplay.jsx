@@ -1,4 +1,8 @@
-import PropTypes from 'prop-types';
+import { words } from "./words";
+
+export const randomWord = words[Math.floor(Math.random() * words.length)].split('');
+
+/*import PropTypes from 'prop-types';
 
 export default function WordDisplay({ word, guessedLetters }) {
   return (
@@ -16,5 +20,7 @@ WordDisplay.propTypes = {
   word: PropTypes.string.isRequired,
   guessedLetters: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
+*/
+
 
 

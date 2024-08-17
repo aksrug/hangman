@@ -1,42 +1,42 @@
 import { useState } from "react";
-import { randomWord } from "../words/GenerateWord";
-import { Hangman } from "../hangman/hangman";
-import { RestartBtn } from "../restartBtn/RestartBtn";
+import { randomWord } from "../WordDisplay";
+import { Hangman } from "../HangmanFigure";
+import { RestartBtn } from "../ResetButton";
 
 export let gameOver = false;
 export function CheckLetter(params) {
   const { updateLoseCount, updateWinCount } = params;
 
   const keyboard = [
-    "Q",
-    "W",
-    "E",
-    "R",
-    "T",
-    "Y",
-    "U",
-    "I",
-    "O",
-    "P",
     "A",
-    "S",
+    "B",
+    "C",
     "D",
+    "E",
     "F",
     "G",
     "H",
+    "I",
     "J",
     "K",
     "L",
-    "Z",
-    "X",
-    "C",
-    "V",
-    "B",
-    "N",
     "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
   ];
 
-  let correctGuessed = [];
+  let correctGuess = [];
 
   const [correct, setCorrect] = useState([]);
   let [count, setCount] = useState(6);
@@ -56,7 +56,7 @@ export function CheckLetter(params) {
   );
 
   randomWord.map((letter) =>
-    correct.includes(letter) ? correctGuessed.push(letter) : correctGuessed
+    correct.includes(letter) ? correctGuess.push(letter) : correctGuess
   );
   function hancleClick(e) {
     const key = e.target.innerText;
@@ -77,7 +77,7 @@ export function CheckLetter(params) {
 
 
   const CheckWin = () => {
-    if (randomWord.length === correctGuessed.length) {
+    if (randomWord.length === correctGuess.length) {
       gameOver = true;
 
       return <p>You win!</p>;

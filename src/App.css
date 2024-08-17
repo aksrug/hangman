@@ -47,14 +47,36 @@
   margin-bottom: 20px;
 }
 
+.game-over {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #ff4500;
+}
+
 @media (max-width: 600px) {
   .hangman-figure {
     height: 150px;
     width: 75px;
   }
 
-  .word-display {
-    font-size: 18px;
+.word-display {
+font-size: 18px;
 }
 
 .keyboard {

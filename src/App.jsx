@@ -6,7 +6,10 @@ import GameOverMessage from './components/hangman/GameOverMessage';
 import Scoreboard from './components/hangman/Scoreboard';
 import ResetButton from './components/hangman/ResetButton';
 
-const words = ['REACT', 'JAVASCRIPT', 'HANGMAN', 'CODING'];
+const words = ['REACT', 'JAVASCRIPT', 'HANGMAN', 'CODING', 'COMPONENT', 'VARIABLE', 'FUNCTION', 
+'DEBUGGING', 'ALGORITHM', 'ARRAY', 'OBJECT', 'SYNTAX', 'LOOP', 'CONDITION', 'FRAMEWORK', 
+'BROWSER', 'WEBPACK', 'NODEJS', 'GITHUB', 'DEPLOYMENT'];
+
 
 function getRandomWord() {
   return words[Math.floor(Math.random() * words.length)];

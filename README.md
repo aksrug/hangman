@@ -69,7 +69,7 @@ There is no tests for this project.
 
 ## 👀 Authors
 
-Monika: [Github](https://github.com/aksrug)
+Rugile: [Github](https://github.com/aksrug)
 
 ## ⚠️ License
 

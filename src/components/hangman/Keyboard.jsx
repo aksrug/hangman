@@ -1,7 +1,7 @@
 //import React from 'react';
 import PropTypes from 'prop-types';
 
-const letters = "AĄBCČDEĘĖFGHIĮJKLMNOPQRSŠTUŲŪVWXYZŽ".split('');
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('');
 
 export default function Keyboard({ onLetterClick, guessedLetters }) {
   return (
@@ -24,3 +24,4 @@ Keyboard.propTypes = {
   onLetterClick: PropTypes.func.isRequired,
   guessedLetters: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
+

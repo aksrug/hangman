@@ -4,6 +4,7 @@ import HangmanFigure from './components/hangman/HangmanFigure';
 import WordDisplay from './components/hangman/WordDisplay';
 import GameOverMessage from './components/hangman/GameOverMessage';
 import Scoreboard from './components/hangman/Scoreboard';
+import ResetButton from './components/hangman/ResetButton';
 
 const words = ['REACT', 'JAVASCRIPT', 'HANGMAN', 'CODING'];
 
@@ -51,8 +52,11 @@ export default function App() {
       <WordDisplay word={word} guessedLetters={guessedLetters} />
       <Keyboard onLetterClick={handleLetterClick} guessedLetters={guessedLetters} />
       {(isWin || isGameOver) && <GameOverMessage isWin={isWin} onRestart={handleRestart} />}
+      <ResetButton onRestart={handleRestart} /> {/* Pridėtas ResetButton */}
     </div>
   );
 }
+
+
 
 

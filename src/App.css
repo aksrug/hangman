@@ -54,8 +54,7 @@
   }
 
   .word-display {
-    font
--size: 18px;
+    font-size: 18px;
 }
 
 .keyboard {
@@ -70,3 +69,19 @@ padding: 8px 10px;
 font-size: 14px;
 }
 }
+
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #ff4500;
+}
+
+

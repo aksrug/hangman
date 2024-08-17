@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+/*import PropTypes from 'prop-types';
 
 export default function HangmanFigure({ wrongGuesses }) {
   return (
@@ -16,4 +16,25 @@ export default function HangmanFigure({ wrongGuesses }) {
 HangmanFigure.propTypes = {
   wrongGuesses: PropTypes.number.isRequired,
 };
+*/
+
+import PropTypes from 'prop-types';
+
+
+export default function HangmanFigure({ wrongGuesses }) {
+  const imagePath = `/images/${wrongGuesses}.png`;
+
+  return (
+    <div className="hangman-figure">
+      <img src={imagePath} alt={`Hangman with ${wrongGuesses} wrong guesses`} />
+    </div>
+  );
+}
+
+HangmanFigure.propTypes = {
+  wrongGuesses: PropTypes.number.isRequired,
+};
+
+
+
 

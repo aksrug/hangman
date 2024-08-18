@@ -1,6 +1,15 @@
-import { words } from "./words";
+//import { words } from "./components/randomWords/wordsList.js";
 
-export const randomWord = words[Math.floor(Math.random() * words.length)].split('');
+import { words } from "../wordsList.js"; // Kelias turėtų būti teisingas
+
+
+//export const randomWord = words[Math.floor(Math.random() * words.length)].split('');
+
+export function randomWord() {
+  return words[Math.floor(Math.random() * words.length)].split('');
+}
+
+
 
 /*import PropTypes from 'prop-types';
 

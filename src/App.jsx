@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import { CheckLetter } from './components/Letters';
-import { Score } from './ResultCounter';
+import { CheckLetter } from './components/letters/Letters';
+import Score from './components/resultCounter/ResultCounter';
+
 
 
 function App() {

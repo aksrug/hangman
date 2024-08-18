@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { randomWord } from "../WordDisplay";
-import { Hangman } from "../HangmanFigure";
-import { RestartBtn } from "../ResetButton";
+import { randomWord } from "../randomWords/WordDisplay";
+import HangmanFigure from "../hangmanFigure/HangmanFigure";
+import { RestartBtn } from "../resetButton/ResetButton";
 
-export let gameOver = false;
+export const gameOver = false;
 export function CheckLetter(params) {
   const { updateLoseCount, updateWinCount } = params;
 
@@ -58,7 +58,7 @@ export function CheckLetter(params) {
   randomWord.map((letter) =>
     correct.includes(letter) ? correctGuess.push(letter) : correctGuess
   );
-  function hancleClick(e) {
+  function handleClick(e) {
     const key = e.target.innerText;
     if (randomWord.includes(key) && !gameOver) {
       setCorrect([...correct, key]);
@@ -70,7 +70,7 @@ export function CheckLetter(params) {
   }
 
   const buttons = keyboard.map((letter, index) => (
-    <button onClick={hancleClick} className="boardBtn" key={index}>
+    <button onClick={handleClick} className="boardButton" key={index}>
       {letter}
     </button>
   ));
@@ -91,9 +91,9 @@ export function CheckLetter(params) {
       count = 0;
       gameOver = true;
       // alert('Game over!')
-      return <p className="loseContainer">Game over!</p>;
+      return <p className="gameOverContainer">Game over!</p>;
     } else {
-      return <p className="livesContainer">Lives left: {count}</p>;
+      return <p className="livesLeftContainer">Lives left: {count}</p>;
     }
   };
 
@@ -108,10 +108,10 @@ export function CheckLetter(params) {
 
   return (
     <>
-      <Hangman data={count} />
+      <HangmanFigure data={count} />
       <div className="letterContainer">{hiddenWord}</div>
       <div className="keyboardContainer">{buttons}</div>
-      <div className="winContainer">
+      <div className="winnerContainer">
         <CheckWin />
       </div>
       <div>

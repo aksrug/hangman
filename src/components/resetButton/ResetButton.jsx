@@ -1,4 +1,4 @@
-import { gameOver } from "../Letters";
+import { gameOver } from "../letters/Letters";
 
 export function ResetButton(params) {
   const { updateWinCount, updateLoseCount } = params;
@@ -9,7 +9,7 @@ export function ResetButton(params) {
           onClick={() => {
             updateLoseCount(), window.location.reload();
           }}
-          className="restartBtn"
+          className="resetButton"
         >
           Restart Game
         </button>
@@ -22,7 +22,7 @@ export function ResetButton(params) {
           onClick={() => {
             updateWinCount(), window.location.reload();
           }}
-          className="restartBtn"
+          className="resetButton"
         >
           Restart Game
         </button>

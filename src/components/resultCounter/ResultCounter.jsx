@@ -1,4 +1,4 @@
-export function Score() {
+export default function Score() {
   const score1 = localStorage.getItem("loseData");
   const lose = JSON.parse(score1);
 
@@ -7,9 +7,9 @@ export function Score() {
 
   return (
     <>
-      <div className="rezCount">
-        <p className="rezContainer">Win count: {win}</p>
-        <p className="rezContainer">Lose count: {lose}</p>
+      <div className="resultCounter">
+        <p className="resultContainer">Win count: {win}</p>
+        <p className="resultContainer">Lose count: {lose}</p>
       </div>
     </>
   );

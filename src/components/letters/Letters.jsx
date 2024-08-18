@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { randomWord } from "../randomWords/WordDisplay";
 import HangmanFigure from "../hangmanFigure/HangmanFigure";
-import { RestartBtn } from "../resetButton/ResetButton";
+import { ResetButton } from "../resetButton/ResetButton";
 
-export const gameOver = false;
+export let gameOver = false;
 export function CheckLetter(params) {
   const { updateLoseCount, updateWinCount } = params;
 
@@ -117,7 +117,7 @@ export function CheckLetter(params) {
       <div>
         <LifeCounter />
       </div>
-      <RestartBtn
+      <ResetButton
         updateWinCount={updateWinCount}
         updateLoseCount={updateLoseCount}
         data={count}

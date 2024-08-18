@@ -8,7 +8,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 8px;
 }
 
 h1 {
@@ -16,35 +16,45 @@ h1 {
   background: linear-gradient(45deg, #00c6ff, #0072ff);
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 8px;
+  padding: 6px;
   border-radius: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
-  margin: 17px 0;
+  margin: 10px 0;
   border: 3px solid #0072ff;
   animation: glowing 1.5s infinite;
 }
 
 .hangmanContainer {
   display: flex;
-  justify-content: center;
-  padding: 10px;
+  justify-content: center;  
   position: relative;
 }
 
 .letterContainer {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 40px;
+  padding: 20px;
+  background-color: #99dbf0fd;
+  border: 2px solid #1b54bd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.letterContainer:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .wordLetter {
   width: 35px;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   border-bottom: 3px solid black;
-  height: 35px;
+  height: 30px;
 }
 
 .keyboardContainer {
@@ -68,9 +78,9 @@ h1 {
 
 .boardButton {
   padding: 8px 15px;
-  cursor: pointer;
-  width: 42px;
+  width: 45px;  
   border-radius: 10px;
+  cursor: pointer;  
 }
 
 .boardButton:hover {
@@ -110,26 +120,33 @@ h1 {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-
 .highlightCorrect {
-  background-color: green;
+  background-color: rgb(41, 145, 41);
 }
 
 .highlightIncorrect {
-  background-color: red;
+  background-color: rgb(212, 14, 14);
 }
 
-.winContainer {
+.winnerContainer {
   padding: 30px;
   font-size: 35px;
-  position: absolute;
-  top: 20rem;
+  position: fixed;  
+  left: 50%;
+  transform: translateX(-50%);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: green;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px; 
+  background: linear-gradient(90deg, #00ff00, #008000);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  animation: pulse 1.5s infinite;
 }
 
 .gameOverContainer {
-  padding: 30px;
+  padding: 10px;
   font-size: 35px;
   position: sticky;
   bottom: 20rem;
@@ -184,8 +201,6 @@ h1 {
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
   border-color: #f06;
 }
-
-
 
 @media(max-width: 320px) {
   img {

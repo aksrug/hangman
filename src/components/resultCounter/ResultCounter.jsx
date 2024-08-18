@@ -8,8 +8,8 @@ export default function Score() {
   return (
     <>
       <div className="resultCounter">
-        <p className="resultContainer">Win count: {win}</p>
-        <p className="resultContainer">Lose count: {lose}</p>
+        <p className="resultContainer">Wins: {win}</p>
+        <p className="resultContainer">Losses: {lose}</p>
       </div>
     </>
   );

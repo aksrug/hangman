@@ -37,7 +37,6 @@ export function CheckLetter(params) {
   ];
 
   let correctGuess = [];
-
   const [correct, setCorrect] = useState([]);
   let [count, setCount] = useState(6);
 
@@ -58,6 +57,7 @@ export function CheckLetter(params) {
   randomWord.map((letter) =>
     correct.includes(letter) ? correctGuess.push(letter) : correctGuess
   );
+
   function handleClick(e) {
     const key = e.target.innerText;
     if (randomWord.includes(key) && !gameOver) {
@@ -74,7 +74,6 @@ export function CheckLetter(params) {
       {letter}
     </button>
   ));
-
 
   const CheckWin = () => {
     if (randomWord.length === correctGuess.length) {

@@ -5,7 +5,7 @@
 
 # Hangman
 
-_game_
+Hangman is a classic word-guessing game where the player tries to guess a hidden word by suggesting letters. Each incorrect guess results in a part of a stick figure being drawn on a gallows. The game continues until the player either guesses the word correctly or the figure is fully drawn, representing a loss. It's a fun and challenging game that tests your vocabulary and deduction skills.
 
 <br>
 

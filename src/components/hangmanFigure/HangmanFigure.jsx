@@ -27,7 +27,7 @@ export default function HangmanFigure(params){
     
     return (
         <div className='hangmanContainer'>
-          <img src={handleImg} alt=""/>
+          <img src={handleImg} alt="Hangman"/>
         </div>
     );
 

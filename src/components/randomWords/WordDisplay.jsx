@@ -1,4 +1,4 @@
-import { words } from "./wordsList.js"; // Kelias turėtų būti teisingas
+import { words } from "./wordsList.js"; 
 
 export const randomWord = words[Math.floor(Math.random() * words.length)].split('');
 

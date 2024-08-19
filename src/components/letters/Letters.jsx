@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { randomWord } from "../randomWords/WordDisplay";
-import HangmanFigure from "../hangmanFigure/HangmanFigure";
+import  HangmanFigure from "../hangmanFigure/HangmanFigure";
 import { ResetButton } from "../resetButton/ResetButton";
 
 export let gameOver = false;
@@ -78,7 +78,6 @@ export function CheckLetter(params) {
   const CheckWin = () => {
     if (randomWord.length === correctGuess.length) {
       gameOver = true;
-
       return <p>You win!</p>;
     }
   };
@@ -89,7 +88,6 @@ export function CheckLetter(params) {
     if (count < 1) {
       count = 0;
       gameOver = true;
-      // alert('Game over!')
       return <p className="gameOverContainer">Game over!</p>;
     } else {
       return <p className="livesLeftContainer">Lives left: {count}</p>;

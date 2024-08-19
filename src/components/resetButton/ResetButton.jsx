@@ -11,7 +11,7 @@ export function ResetButton(params) {
           }}
           className="resetButton"
         >
-          Restart Game
+          Try again
         </button>
       </div>
     );

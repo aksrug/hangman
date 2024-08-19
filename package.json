@@ -1,7 +1,7 @@
 {
-  "homepage": "https://github.com/aksrug/hangman",
+  "homepage": "https://aksrug.github.io/hangman",
   "name": "hangman",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {

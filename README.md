@@ -69,6 +69,8 @@ Would like to run this project locally? Open terminal and follow these steps:
     ```sh
     npm run dev
     ```
+5. Follow the link
+
 ## 👀 Overview
 
 This project is a web-based implementation of the classic "Hangman" game. The application is build using React and Vite, with a focus on providing a responsive and user-friendly interface. The game challenges the player to guess the word before running out of attempts.

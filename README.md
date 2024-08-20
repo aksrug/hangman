@@ -28,6 +28,11 @@ Design: -
 
 ## 🧰 Getting Started
 
+## 💻 System Requirements
+
+-   Node.js >= 14.x
+-   npm >= 6.x
+
 ### 💻 Prerequisites
 
 Node.js - _download and install_
@@ -50,7 +55,9 @@ Would like to run this project locally? Open terminal and follow these steps:
     ```sh
     git clone https://github.com/aksrug/hangman
     ```
-2. Install NPM packages
+2. Open folder named "hangman"
+
+3. Install NPM packages
     ```sh
     npm i
     ```
@@ -58,10 +65,19 @@ Would like to run this project locally? Open terminal and follow these steps:
     ```sh
     npm install
     ```
-3. Run the server
+4. Run the server
     ```sh
     npm run dev
     ```
+## 👀 Overview
+
+This project is a web-based implementation of the classic "Hangman" game. The application is build using React and Vite, with a focus on providing a responsive and user-friendly interface. The game challenges the player to guess the word before running out of attempts.
+
+## ✍️ Usage
+
+-   Start the game by clicking on the letters to guess the word.
+-   You have 6 attemts to guess the correct word.
+-   After the game ends, click "Try again" to start a new round.
 
 ### 🧪 Running tests
 
